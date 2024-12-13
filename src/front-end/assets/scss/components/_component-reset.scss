@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Inter", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  border: 1px solid red;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+html {
+  background-color: $gray-900;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: $gray-100;
+  @include responsive(991px) {
+  }
+  @include responsive(500px) {
+  }
+}
+
+body {
+  
+  &::-webkit-scrollbar {
+    width: 0px;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: white;
+  }
+}
+
+button,
+a {
+  background-color: transparent;
+  cursor: pointer;
+}
+
