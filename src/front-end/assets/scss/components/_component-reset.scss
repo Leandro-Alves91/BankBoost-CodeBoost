@@ -8,11 +8,11 @@
   list-style: none;
   text-decoration: none;
   font-size: 18px;
-  font-family: "Poppins", serif;
+  font-family: "poppins", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-box-sizing: border-box;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 
 img {
@@ -22,7 +22,6 @@ img {
 }
 
 html {
-  background-color: $gray-900;
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;

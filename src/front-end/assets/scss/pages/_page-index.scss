@@ -1,0 +1,106 @@
+header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    background: linear-gradient(to right, #1A0078, #6F47FF);
+    
+    .container {
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 32px 0;
+            .left {
+                a {
+                    img {
+
+                    }
+                }
+            }
+            .center {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 40px;
+                    li {
+                        a {
+                            font-family: 'inter', sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 19.36px;
+                            color: $gray-100;
+                            transition: all .3s ease;
+                            &:hover {
+                                color: $gray-300;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.s-hero {
+    background: linear-gradient(to right, #1A0078, #6F47FF);
+    padding-top: 92px;
+    padding-bottom: 149px;
+    .container {
+        .box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            .left {
+                h5 {
+                    font-family: "poppins", sans-serif;
+                    line-height: 28.8px;
+                    letter-spacing: -0.5px;
+                    color: rgba(255, 255, 255, 0.56);
+                    margin-bottom: 32px;
+                }
+                h1 {
+                    font-family: "poppins", sans-serif;
+                    line-height: 73.6px;
+                    color: $gray-100;
+                    margin-bottom: 32px;
+                    max-width: 661px;
+                }
+                .cards {
+                    margin-top: 64px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 62px;
+                   
+                }
+            }
+            .right {
+                width: 100%;
+                max-width: 608px;
+                .text {
+                    h2 {
+                        font-family: 'poppins', sans-serif;
+                        font-weight: 600;
+                        line-height: 48px;
+                        letter-spacing: -2px;
+                        color: rgba(255, 255, 255, 0.48);
+                        margin-bottom: 63px;
+                    }
+                }
+                .img-cards {
+                    position: relative;
+                    .card-front {
+                        position: absolute;
+                        left: -80px;
+                        border-radius: 12px;
+                        z-index: 2;
+                    }
+                    .card-back {
+                        position: absolute;
+                       top: 91px;
+                       right: 85px;
+                    }
+                }
+            }
+        }
+    }
+}
