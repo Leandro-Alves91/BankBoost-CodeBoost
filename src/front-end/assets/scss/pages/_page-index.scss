@@ -104,3 +104,188 @@ header {
         }
     }
 }
+
+.s-app-boost {
+    padding-top: 112px;
+    .container {
+        .top {
+            display: flex;
+            align-items: flex-start;
+            gap: 155px;
+            margin-bottom: 29px;
+            .card-image {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                .neon {
+                    margin-bottom: 24px;
+                    border: 4px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 34px;
+                }
+                .ponto {
+
+                }
+            }
+            .right {
+                width: 100%;
+                max-width: 697px;
+                .text-primary {
+                    margin-bottom: 56px;
+                    width: 100%;
+                    max-width: 463px;
+                    h3 {
+                        font-weight: 600;
+                        line-height: 48px;
+                        letter-spacing: -1px;
+                        color: $gray-800;
+                    }
+                }
+                .card-produtos {
+                    margin-bottom: 32px;
+                    .card-produto:not(:last-child) {
+                        margin-bottom: 40px;
+                    }
+                    .card-produto {
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+                        border-bottom: 1px solid $gray-200;
+                        padding-bottom: 32px;
+                        .icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 61px;
+                            height: 61px;
+                            background-color: $purple-20;
+                            border-radius: 8px;
+                            img {
+
+                            }
+                        }
+                        .text {
+                            h5 {
+                                font-weight: 600;
+                                line-height: 36px;
+                                letter-spacing: -0.5px;
+                                color: $gray-800;
+                                margin-bottom: 2px;
+                            }
+                            span {
+                                font-family: "inter", sans-serif;
+                                font-size: 18px;
+                                font-weight: 400;
+                                line-height: 27px;
+                                color: $gray-600;
+                            }
+                        }
+                    }
+                }
+                strong {
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 8px;
+                    font-family: "inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 17.92px;
+                    letter-spacing: -0.5px;
+                    color: #0073CE;
+                    img {
+
+                    }
+                }
+            }
+        }
+        .bottom {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            .app {
+                width: 100%;
+                max-width: 270px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 8px;
+                    background-color: $purple-10;
+                    margin-bottom: 24px;
+                    img {
+
+                    }
+                }
+                .text-app {
+                    margin-bottom: 24px;
+                    h5 {
+                        font-weight: 600;
+                        line-height: 36px;
+                        letter-spacing: -0.5px;
+                        color: $gray-800;
+                        margin-bottom: 8px;
+                        text-align: center;
+                    }
+                    p {
+                        font-family: "inter", sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: $gray-600;
+                        text-align: center;
+                    }
+                }
+                .btns-app {
+                }
+            }
+            .boost-pj {
+                width: 100%;
+                max-width: 800px;
+                border-radius: 10px;
+                background-color: $purple-20;
+                position: relative;
+                .left-pj {
+                    padding: 69px 0 69px 72px;
+                    .text-pj {
+                        width: 100%;
+                        max-width: 380px;
+                        margin-bottom: 32px;
+                        h3 {
+                            font-weight: 600;
+                            line-height: 60px;
+                            letter-spacing: -2px;
+                            color: $gray-100;
+                            margin-bottom: 8px;
+                        }
+                        h4 {
+                            font-weight: 500;
+                            line-height: 33.6px;
+                            letter-spacing: -1px;
+                            color: $gray-100;
+                            margin-bottom: 8px;
+                        }
+                        p {
+                            font-family: "Inter", sans-serif;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: $gray-200;
+                        }
+                    }
+                }
+                .card-pj {
+                    position: absolute;
+                    top: 96px;
+                    right: -29.75px;
+                    img {
+
+                    }
+                }
+            }
+        }
+    }
+}
