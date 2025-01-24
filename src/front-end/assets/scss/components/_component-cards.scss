@@ -22,3 +22,39 @@
         color: #ffffff;
     }
 }
+
+.card-info {
+    width: 100%;
+    max-width: 384px;
+    height: 209px;
+    border-radius: 8px;
+    background-color: #F1F0F5;
+    padding: 37px 44px 23px 32px;
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 21px;
+        span {
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 20.16px;
+            letter-spacing: -1px;
+            color: #4E4B59;
+        }
+        img {
+
+        }
+    }
+    .text-info {
+        p {
+            font-family: "inter", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: $gray-600;
+            ;
+        }
+    }
+}
