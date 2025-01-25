@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/lib/plugins.css" />
   <link rel="stylesheet" href="./assets/css/main.css" />
   <title>BankBoost</title>
@@ -257,35 +258,90 @@
             Você resolve tudo sem estresse 
             😊</strong>
           </h3>
+          
       </div>
+   
       <div class="cards-info" data-aos="zoom-in">
-        <div class="card-info">
-          <div class="top">
-            <span>@marciogurka</span>
-            <img src="./assets/img/s-info/twiter.svg" alt="Logo Twiter">
-          </div>
-          <div class="text-info">
-            <p>Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
-          </div>
-        </div>
-        <div class="card-info">
-          <div class="top">
-            <span>@kleriene18</span>
-            <img src="./assets/img/s-info/twiter.svg" alt="Logo Twiter">
-          </div>
-          <div class="text-info">
-            <p>Eu uso o Neon pra render o pouquinho que eu tenho. Como disse minha amiga Bruna, um dia eu abro o app de novo e PA: tô rica.</p>
-          </div>
-        </div>
-        <div class="card-info">
-          <div class="top">
-            <span>@mzltweet</span>
-            <img src="./assets/img/s-info/twiter.svg" alt="Logo Twiter">
-          </div>
-          <div class="text-info">
-            <p> Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro cliente.</p>
-          </div>
-        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-info">
+                <div class="top">
+                  <span>@marciogurka</span>
+                  <img src="./assets/img/s-info/twiter.svg" alt="Logo Twiter">
+                </div>
+                <div class="text-info">
+                  <p>Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-info">
+                <div class="top">
+                  <span>@kleriene18</span>
+                  <img src="./assets/img/s-info/twiter.svg" alt="Logo Twiter">
+                </div>
+                <div class="text-info">
+                  <p>Eu uso o Neon pra render o pouquinho que eu tenho. Como disse minha amiga Bruna, um dia eu abro o app de novo e PA: tô rica.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-info">
+                <div class="top">
+                  <span>@mzltweet</span>
+                  <img src="./assets/img/s-info/twiter.svg" alt="Logo Twiter">
+                </div>
+                <div class="text-info">
+                  <p> Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro cliente.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-info">
+                <div class="top">
+                  <span>@marciogurka</span>
+                  <img src="./assets/img/s-info/twiter.svg" alt="Logo Twiter">
+                </div>
+                <div class="text-info">
+                  <p>Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-info">
+                <div class="top">
+                  <span>@kleriene18</span>
+                  <img src="./assets/img/s-info/twiter.svg" alt="Logo Twiter">
+                </div>
+                <div class="text-info">
+                  <p>Eu uso o Neon pra render o pouquinho que eu tenho. Como disse minha amiga Bruna, um dia eu abro o app de novo e PA: tô rica.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-info">
+                <div class="top">
+                  <span>@mzltweet</span>
+                  <img src="./assets/img/s-info/twiter.svg" alt="Logo Twiter">
+                </div>
+                <div class="text-info">
+                  <p> Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro cliente.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-info">
+                <div class="top">
+                  <span>@marciogurka</span>
+                  <img src="./assets/img/s-info/twiter.svg" alt="Logo Twiter">
+                </div>
+                <div class="text-info">
+                  <p>Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
+                </div>
+              </div>
+            </div>
+          </div>      
       </div>
     </div>
   </section>
@@ -550,6 +606,32 @@
   <script src="./assets/js/lib/plugins.js"></script>
   <script src="./assets/js/all.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1.3,
+        spaceBetween: 17,
+        },
+        620: {
+          slidesPerView: 2.1,
+          spaceBetween: 17,
+        },
+        1000: {
+          slidesPerView: 3.1,
+          spaceBetween: 20,
+        },
+        
+
+      }
+    });
+  </script>
 </body>
 
 </html>
