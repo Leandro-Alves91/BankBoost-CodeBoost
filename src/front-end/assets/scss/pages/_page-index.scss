@@ -6,6 +6,7 @@ header {
     width: 100%;
     .container {
         .main-header {
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -50,7 +51,45 @@ header {
                     }
                 }
             }
+            .menu-mobile {
+                display: none;
+            }
+            .mobile-open {
+                display: none;
+                position: absolute;
+                padding: 24px 12px;
+                right: 0;
+                transform: translateX(157px);
+                top: 54px;
+                opacity: 0;
+                background-color: $purple-10;
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 40px;
+                    flex-direction: column;
+                    li {
+                        a {
+                            font-family: 'inter', sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 19.36px;
+                            color: $yellow;
+                            transition: all .3s ease;
+                        }
+                    }
+                }
+                &.active {
+                    display: block;
+                    transform: translateX(0);
+                    opacity: 1;
+                    z-index: 2;
+                }
+
+            }
         }
+
     }
 }
 
@@ -129,6 +168,7 @@ header {
 }
 
 .s-app-boost {
+    display: none;
     padding-top: 112px;
     .container {
         display: flex;
@@ -319,6 +359,7 @@ header {
 }
 
 .s-new {
+    display: none;
     padding-bottom: 169px;
     .container {
         .text {
@@ -347,6 +388,7 @@ header {
 }
 
 .s-conta-digital {
+    display: none;
     margin-bottom: 141px;
     .container {
         .main-area {
@@ -437,6 +479,7 @@ header {
 }
 
 footer {
+    display: none;
     background-color: $purple-10;
     padding: 40px 0 0 0;
     
@@ -615,4 +658,195 @@ footer {
             }
         }
     }
+}
+
+@include responsive(1500px) {
+    header {
+        .container {
+            .main-header {
+                .left {
+                    a {
+                        
+                    }
+                }
+                .center {
+                    ul {
+                        li {
+                            a {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .s-hero {
+        .container {
+            .box {
+                .left {        
+                    h5 {
+                    }
+                    h1 {
+                        font-size: 58px;
+                    }
+                    .cards {
+                       
+                    }
+                }
+                .right {
+                    margin-right: 0;
+                    .text {
+                        h2 {
+                        }
+                    }
+                    .img-cards {
+                        .card-front {
+                        }
+                        .card-back {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive(1220px) {
+    header {
+        .container {
+            .main-header {
+                .left {
+                    a {
+                        
+                    }
+                }
+                .center {
+                    ul {
+                        li {
+                            a {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .s-hero {
+        .container {
+            .box {
+                .left {        
+                    h5 {
+                    }
+                    h1 {
+                        font-size: 56px;
+                    }
+                    .cards {
+                       
+                    }
+                }
+                .right {
+                    margin-right: 0;
+                    .text {
+                        h2 {
+                        }
+                    }
+                    .img-cards {
+                        .card-front {
+                        }
+                        .card-back {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive(1000px) {
+    header {
+        .container {
+            .main-header {
+                .left {
+                    a {
+                        
+                    }
+                }
+                .center {
+                    display: none;
+                    ul {
+                        li {
+                            a {
+                            }
+                        }
+                    }
+                }
+                .right {
+                    display: none;
+                }
+                .menu-mobile {
+                    display: flex;
+                    align-items: center;
+                    .menu {
+                        
+                        opacity: 0;
+                        transform: translateY(-8rem);
+                        &.active {
+                            opacity: 1;
+                            transform: translateY(0rem);
+                            
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+    
+    .s-hero {
+        .container {
+            .box {
+                .left {        
+                    h5 {
+                    }
+                    h1 {
+                    }
+                    .cards {
+                       
+                    }
+                }
+                .right {
+                    .text {
+                        h2 {
+                        }
+                    }
+                    .img-cards {
+                        .card-front {
+                        }
+                        .card-back {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive(900px) {
+}
+@include responsive(800px) {
+}
+@include responsive(700px) {
+}
+@include responsive(600px) {
+}
+@include responsive(480px) {
+}
+@include responsive(450px) {
+}
+@include responsive(430px) {
+}
+@include responsive(400px) {
+}
+@include responsive(375px) {
 }
